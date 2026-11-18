@@ -66,6 +66,24 @@ const jogos = [
         aluno: "Bianka Vieira Ventura",
         link:"https://bianka2607.github.io/missao_oceano/",
         icone: "🐢"
+    },
+    {
+        nome: "Game Space",
+        aluno: "Keilon de Moura",
+        link: "https://keilondemourafrazaobotelho.github.io/game_space/",
+        icone: "🚀"
+    },
+    {
+        nome: "Moto Drive",
+        aluno: "Thais Barbosa",
+        link: "https://t38354631-debug.github.io/Jogo_IA/",
+        icone:"🏁"
+    },
+    {
+        nome:"Kitty Farm",
+        aluno:"Maria Paula",
+        link: "https://mariapaulaos2711.github.io/jogo/",
+        icone:"🐱"
     }
 
 ];

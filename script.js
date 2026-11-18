@@ -54,6 +54,18 @@ const jogos = [
         aluno: "Yago Gregio de Oliveira",
         link: "https://yagogregio.github.io/Pixel-GP-Manager/",
         icone: "🧠"
+    },
+    {
+        nome: "Tetris",
+        aluno:"Arthur Henrique da Silva Oliveira",
+        link: "https://oliveirahenriquedasilca-cmd.github.io/jogo/",
+        icone:"⚡"
+    },
+    {
+        nome:"Missão Oceano",
+        aluno: "Bianka Vieira Ventura",
+        link:"https://bianka2607.github.io/missao_oceano/",
+        icone: "🐢"
     }
 
 ];

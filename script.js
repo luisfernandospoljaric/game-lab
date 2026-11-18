@@ -48,6 +48,12 @@ const jogos = [
         aluno: "Vivian Ferreira da Silva",
         link: "https://vivifsilva.github.io/Jogo_teste/Jogo/",
         icone: "🎯"
+    },
+    {
+        nome: "Pixel GP Manager",
+        aluno: "Yago Gregio de Oliveira",
+        link: "https://yagogregio.github.io/Pixel-GP-Manager/",
+        icone: "🧠"
     }
 
 ];

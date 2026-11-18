@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f4f6fb;
+    color: #172033;
+}
+
+/* CABEÇALHO */
+
+.hero {
+    background: linear-gradient(135deg, #0b1020, #20204a);
+    color: white;
+    padding-bottom: 75px;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-label {
+    border: 1px solid #555b7a;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #d9def2;
+}
+
+.hero-content {
+    max-width: 1150px;
+    margin: auto;
+    padding: 55px 20px 0;
+}
+
+.subtitle,
+.section-subtitle {
+    color: #37d6b0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(38px, 6vw, 60px);
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #9b91ff;
+}
+
+.description {
+    max-width: 600px;
+    color: #c0c9dc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #37d6b0;
+    color: #081a1a;
+    padding: 13px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #65ebca;
+    transform: translateY(-3px);
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-subtitle {
+    color: #6557db;
+    margin-bottom: 8px;
+}
+
+.section-header h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+}
+
+.section-description {
+    color: #788398;
+    margin-top: 8px;
+}
+
+.counter {
+    background: white;
+    border: 1px solid #e2e7f0;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.counter strong {
+    display: block;
+    font-size: 26px;
+    color: #6557db;
+}
+
+.counter span {
+    font-size: 12px;
+    color: #788398;
+}
+
+/* PESQUISA */
+
+.filters {
+    margin: 30px 0 25px;
+}
+
+.filters input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dfe4ee;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.filters input:focus {
+    border-color: #6557db;
+}
+
+/* CARDS DOS JOGOS */
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #e6eaf2;
+    box-shadow: 0 5px 18px rgba(24, 36, 66, 0.04);
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(24, 36, 66, 0.12);
+}
+
+.game-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeecff;
+    border-radius: 13px;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.game-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.student {
+    color: #788398;
+    font-size: 13px;
+    min-height: 40px;
+    line-height: 1.5;
+}
+
+.game-link {
+    display: block;
+    text-align: center;
+    background: #6557db;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.game-link:hover {
+    background: #493bb8;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 40px;
+    color: #788398;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #10182b;
+    color: #aeb8cc;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header {
+        align-items: flex-start;
+    }
+
+    .hero-content {
+        padding-top: 35px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+}

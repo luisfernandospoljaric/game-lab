@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GAME LAB | Jogos dos Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">🎮 GAME LAB</a>
+            <span class="nav-label">Projetos dos alunos</span>
+        </nav>
+
+        <div class="hero-content">
+            <p class="subtitle">APRENDER • CRIAR • JOGAR</p>
+
+            <h1>Bem-vindo ao <span>Game Lab!</span></h1>
+
+            <p class="description">
+                Explore os jogos desenvolvidos pelos alunos durante
+                as aulas de programação. Cada projeto representa
+                criatividade, dedicação e aprendizado.
+            </p>
+
+            <a href="#jogos" class="btn-primary">
+                Explorar jogos ↓
+            </a>
+        </div>
+    </header>
+
+    <main class="container" id="jogos">
+
+        <section class="section-header">
+            <div>
+                <p class="section-subtitle">NOSSA COLEÇÃO</p>
+                <h2>Jogos publicados</h2>
+                <p class="section-description">
+                    Escolha um projeto e divirta-se!
+                </p>
+            </div>
+
+            <div class="counter">
+                <strong id="total-jogos">0</strong>
+                <span>Jogos</span>
+            </div>
+        </section>
+
+        <section class="filters">
+            <input
+                type="search"
+                id="pesquisa"
+                placeholder="Pesquisar jogo ou aluno..."
+            >
+        </section>
+
+        <section id="lista-jogos" class="games-grid">
+            <!-- Os jogos serão inseridos pelo JavaScript -->
+        </section>
+
+        <p id="mensagem-vazia" class="empty-message" hidden>
+            Nenhum jogo encontrado.
+        </p>
+
+    </main>
+
+    <footer>
+        <h3>🎮 GAME LAB</h3>
+        <p>Projetos desenvolvidos pelos alunos em sala de aula.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
